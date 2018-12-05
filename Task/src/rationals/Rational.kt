@@ -3,18 +3,23 @@ package rationals
 import java.math.BigInteger
 import java.math.RoundingMode
 
-data class Rational(private val _numeratorAndDenominator: Pair<BigInteger, BigInteger>) : Comparable<Rational> {
-    constructor(numerator: BigInteger, denominator: BigInteger = 1.toBigInteger()) : this(normalize(numerator, denominator))
-
-    private val numerator = _numeratorAndDenominator.first
-    val denominator = _numeratorAndDenominator.second
+data class Rational(val numerator: BigInteger, val denominator: BigInteger = 1.toBigInteger()) : Comparable<Rational> {
 
     override fun toString(): String {
-        return if (denominator == 1.toBigInteger()) {
-            numerator.toString()
+        val normalizedRational = this.normalize()
+        return if (normalizedRational.denominator == 1.toBigInteger()) {
+            normalizedRational.numerator.toString()
         } else {
-            "$numerator/$denominator"
+            "${normalizedRational.numerator}/${normalizedRational.denominator}"
         }
+    }
+
+    override fun equals(other: Any?): Boolean {
+        return other is Rational && this.compareTo(other) == 0
+    }
+
+    override fun hashCode(): Int {
+        return this.toBigDecimal().hashCode()
     }
 
     operator fun times(other: Rational): Rational {
@@ -50,46 +55,62 @@ data class Rational(private val _numeratorAndDenominator: Pair<BigInteger, BigIn
     operator fun rangeTo(other: Rational): ClosedRange<Rational> {
         return RationalRange(this, other)
     }
+
 }
 
-private fun normalize(numerator: BigInteger, denominator: BigInteger): Pair<BigInteger, BigInteger> {
+fun Rational.normalize(): Rational {
     fun greatestCommonFactor(): BigInteger {
         val minOf = minOf(numerator.abs(), denominator.abs())
         return if (numerator % minOf == 0.toBigInteger() && denominator % minOf == 0.toBigInteger()) {
             minOf
         } else {
-            ((minOf/2.toBigInteger()).downTo(1.toBigInteger())).first { numerator % it == 0.toBigInteger() && denominator % it == 0.toBigInteger() }
+            ((minOf / 2.toBigInteger()).downTo(1.toBigInteger()))
+                    .first { numerator % it == 0.toBigInteger() && denominator % it == 0.toBigInteger() }
         }
     }
+
     val divisor = greatestCommonFactor()
     return if (divisor == 0.toBigInteger())
-        Pair(numerator, denominator)
+        this
     else
-        Pair(numerator / divisor, denominator / divisor)
+        Rational(numerator / divisor, denominator / divisor)
 }
 
 infix fun Int.divBy(denominator: Int): Rational {
-    return Rational(this.toBigInteger(), denominator.toBigInteger())
-}
-
-infix fun Long.divBy(denominator: Long): Rational {
-    return Rational(this.toBigInteger(), denominator.toBigInteger())
-}
-
-infix fun BigInteger.divBy(denominator: BigInteger): Rational {
-    return Rational(this, denominator)
-}
-
-internal fun String.toRational(): Rational {
-    return if (this.contains('/')) {
-        Rational(substringBefore('/').toBigInteger(), substringAfter('/').toBigInteger())
+    if (denominator != 0) {
+        return Rational(this.toBigInteger(), denominator.toBigInteger())
     } else {
-        Rational(this.toBigInteger())
+        throw Exception("You cannot have 0 as denominator")
     }
 }
 
-internal fun BigInteger.findFactors(): List<BigInteger> {
-    return (1.toBigInteger()..this).filter { this % it == 0.toBigInteger() }
+infix fun Long.divBy(denominator: Long): Rational {
+    if (denominator != 0L) {
+        return Rational(this.toBigInteger(), denominator.toBigInteger())
+    } else {
+        throw Exception("You cannot have 0 as denominator")
+    }
+}
+
+infix fun BigInteger.divBy(denominator: BigInteger): Rational {
+    if (denominator != 0.toBigInteger()) {
+        return Rational(this, denominator)
+    } else {
+        throw Exception("You cannot have 0 as denominator")
+    }
+}
+
+fun String.toRational(): Rational {
+    return if (this.contains('/')) {
+        if (this.substringAfter('/') == "0") {
+            throw Exception("You cannot have 0 as denominator")
+        } else {
+            val newRational = Rational(substringBefore('/').toBigInteger(), substringAfter('/').toBigInteger())
+            newRational.normalize()
+        }
+    } else {
+        Rational(this.toBigInteger())
+    }
 }
 
 class RationalRange(override val start: Rational, override val endInclusive: Rational) : ClosedRange<Rational>
@@ -124,8 +145,6 @@ operator fun BigInteger.rangeTo(other: BigInteger) = BigIntegerProgression(this,
 fun BigInteger.downTo(other: BigInteger): BigIntegerProgression {
     return BigIntegerProgression(this, other, (-1).toBigInteger())
 }
-
-
 
 
 fun main(args: Array<String>) {
