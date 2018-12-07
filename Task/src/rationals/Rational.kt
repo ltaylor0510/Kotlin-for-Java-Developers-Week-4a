@@ -62,7 +62,9 @@ fun Rational.normalize(): Rational {
     val divisor = greatestCommonFactor(numerator, denominator)
     return if (divisor == 0.toBigInteger())
         this
-    else
+    else if (numerator < 0.toBigInteger() && denominator < 0.toBigInteger()) {
+        Rational(numerator.abs() / divisor, denominator.abs() / divisor)
+    } else
         Rational(numerator / divisor, denominator / divisor)
 }
 

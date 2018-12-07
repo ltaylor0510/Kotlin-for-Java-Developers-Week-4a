@@ -142,4 +142,9 @@ class TestRationals {
                 (4.toBigInteger().downTo(1.toBigInteger()).map { it }))
     }
 
+    @Test
+    fun `a Rational with two negative numbers normalizes to two positive numbers`() {
+        assertEquals("1/2", (-2 divBy -4).toString())
+    }
+
 }
