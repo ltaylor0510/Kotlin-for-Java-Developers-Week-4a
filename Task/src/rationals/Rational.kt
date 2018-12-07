@@ -59,21 +59,21 @@ data class Rational(val numerator: BigInteger, val denominator: BigInteger = 1.t
 }
 
 fun Rational.normalize(): Rational {
-    fun greatestCommonFactor(): BigInteger {
-        val minOf = minOf(numerator.abs(), denominator.abs())
-        return if (numerator % minOf == 0.toBigInteger() && denominator % minOf == 0.toBigInteger()) {
-            minOf
-        } else {
-            ((minOf / 2.toBigInteger()).downTo(1.toBigInteger()))
-                    .first { numerator % it == 0.toBigInteger() && denominator % it == 0.toBigInteger() }
-        }
-    }
-
-    val divisor = greatestCommonFactor()
+    val divisor = greatestCommonFactor(numerator, denominator)
     return if (divisor == 0.toBigInteger())
         this
     else
         Rational(numerator / divisor, denominator / divisor)
+}
+
+fun greatestCommonFactor(numerator: BigInteger, denominator: BigInteger): BigInteger {
+    val x = numerator.abs()
+    val y = denominator.abs()
+    return if (x % y == 0.toBigInteger()) {
+        y
+    } else {
+        greatestCommonFactor(y, (x % y))
+    }
 }
 
 infix fun Int.divBy(denominator: Int): Rational {

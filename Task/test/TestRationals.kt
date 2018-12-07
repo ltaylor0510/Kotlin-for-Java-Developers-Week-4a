@@ -6,15 +6,15 @@ import org.junit.jupiter.api.assertThrows
 import java.lang.Exception
 
 class TestRationals {
-//    @Test
-//    fun test0() {
-//        val r1 = 1 divBy 2
-//        val r2 = 2000000000L divBy 4000000000L
-//        assertEquals(true, r1 == r2, """Wrong result for
-//            |val r1 = 1 divBy 2
-//            |val r2 = 2000000000L divBy 4000000000L
-//            |r1 == r2""".trimMargin())
-//    }
+    @Test
+    fun test0() {
+        val r1 = 1 divBy 2
+        val r2 = 2000000000L divBy 4000000000L
+        assertEquals(true, r1 == r2, """Wrong result for
+            |val r1 = 1 divBy 2
+            |val r2 = 2000000000L divBy 4000000000L
+            |r1 == r2""".trimMargin())
+    }
 
     @Test
     fun test1() {
@@ -118,18 +118,18 @@ class TestRationals {
         assertThrows<Exception> { "1/0".toRational() }
     }
 
-//    @Test
-//    fun test8() {
-//        assertEquals(true, "912016490186296920119201192141970416029".toBigInteger() divBy
-//                "1824032980372593840238402384283940832058".toBigInteger() == 1 divBy 2, "Wrong result for\n" +
-//                "\"912016490186296920119201192141970416029\".toBigInteger() divBy " +
-//                "\"1824032980372593840238402384283940832058\".toBigInteger() == 1 divBy 2")
-//    }
+    @Test
+    fun test8() {
+        assertEquals(true, "912016490186296920119201192141970416029".toBigInteger() divBy
+                "1824032980372593840238402384283940832058".toBigInteger() == 1 divBy 2, "Wrong result for\n" +
+                "\"912016490186296920119201192141970416029\".toBigInteger() divBy " +
+                "\"1824032980372593840238402384283940832058\".toBigInteger() == 1 divBy 2")
+    }
 
-//    @Test
-//    fun testBigInteger() {
-//        assertEquals(true, ( "982451653".toBigInteger() divBy "982451654".toBigInteger()).toString() == "982451653/982451654", "Wrong result for\n(2 divBy 4).toString() == \"1/2\"")
-//    }
+    @Test
+    fun testBigInteger() {
+        assertEquals(true, ( "982451653".toBigInteger() divBy "982451654".toBigInteger()).toString() == "982451653/982451654", "Wrong result for\n(2 divBy 4).toString() == \"1/2\"")
+    }
 
     @Test
     fun `BigInteger range creates ascending range`() {

@@ -4,7 +4,6 @@
     <list default="true" id="ef4e36f1-29d7-4466-a65c-8b6eb2cbe71b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task/src/rationals/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/src/rationals/Rational.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task/test/TestRationals.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Task/test/TestRationals.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +12,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47653142">
+    <splitter split-orientation="horizontal" split-proportion="0.35441527">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Task/test/TestRationals.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="733">
-                  <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+                <state relative-caret-position="661">
+                  <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
                   <folding>
                     <element signature="e#19#174#0" expanded="true" />
                   </folding>
@@ -35,11 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Task/src/rationals/Rational.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="67" selection-start-line="67" selection-end-line="67" />
-                  <folding>
-                    <element signature="e#19#171#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="475">
+                  <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -54,16 +50,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Task/src/rationals/Rational.kt" />
         <option value="$PROJECT_DIR$/Task/test/TestRationals.kt" />
+        <option value="$PROJECT_DIR$/Task/src/rationals/Rational.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1280" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1280" />
-    <option name="height" value="1416" />
+    <option name="height" value="1408" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -79,7 +75,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544032587926" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544181966557" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -97,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRationals.denominator cannot be 0">
+  <component name="RunManager" selected="JUnit.TestRationals">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -146,6 +142,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRationals.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinRationals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rationals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="rationals.TestRationals" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRationals.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KotlinRationals" />
       <extension name="coverage">
@@ -157,22 +169,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="rationals.TestRationals" />
       <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRationals.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KotlinRationals" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rationals.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="rationals.TestRationals" />
-      <option name="METHOD_NAME" value="test8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRationals.denominator cannot be 0" />
         <item itemvalue="JUnit.TestRationals" />
+        <item itemvalue="JUnit.TestRationals.test2" />
+        <item itemvalue="JUnit.TestRationals.denominator cannot be 0" />
         <item itemvalue="JUnit.TestRationals.test6" />
         <item itemvalue="JUnit.TestRationals.testBigInteger" />
-        <item itemvalue="JUnit.TestRationals.test8" />
       </list>
     </recent_temporary>
   </component>
@@ -218,12 +214,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRationals - 2018.12.04 at 17h 24m 18s.xml">
-      <configuration name="TestRationals" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRationals - 2018.12.04 at 17h 26m 23s.xml">
-      <configuration name="TestRationals" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestRationals - 2018.12.04 at 17h 27m 11s.xml">
       <configuration name="TestRationals" configurationId="JUnit" />
     </history-entry>
@@ -248,9 +238,15 @@
     <history-entry file="TestRationals_denominator_cannot_be_0 - 2018.12.05 at 17h 42m 57s.xml">
       <configuration name="TestRationals.denominator cannot be 0" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRationals - 2018.12.07 at 11h 19m 16s.xml">
+      <configuration name="TestRationals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRationals_test2 - 2018.12.07 at 11h 24m 56s.xml">
+      <configuration name="TestRationals.test2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="1416" extended-state="4" />
+    <frame x="0" y="-4" width="2560" height="1444" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.13365155" />
@@ -262,8 +258,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36307216" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39939255" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3629461" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39939255" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -282,6 +278,18 @@
       <window_info anchor="right" id="Leiningen" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/Task/src/rationals/Rational.kt</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -340,22 +348,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/test/TestRationals.kt">
+    <entry file="file://$PROJECT_DIR$/Task/src/rationals/Rational.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-          <folding>
-            <element signature="e#19#174#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="475">
+          <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/src/rationals/Rational.kt">
+    <entry file="file://$PROJECT_DIR$/Task/test/TestRationals.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="661">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
-            <element signature="e#19#171#0" expanded="true" />
+            <element signature="e#19#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
