@@ -147,4 +147,9 @@ class TestRationals {
         assertEquals("1/2", (-2 divBy -4).toString())
     }
 
+    @Test
+    fun `a Rational with negative denominator normalizes to rational with negative numerator and positive denominator`() {
+        assertEquals("-1/2", (2 divBy -4).toString())
+    }
+
 }

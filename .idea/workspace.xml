@@ -18,8 +18,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Task/test/TestRationals.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="683">
-                  <caret line="145" column="53" lean-forward="true" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
+                <state relative-caret-position="733">
+                  <caret line="150" column="52" lean-forward="true" selection-start-line="150" selection-start-column="52" selection-end-line="150" selection-end-column="52" />
                   <folding>
                     <element signature="e#19#174#0" expanded="true" />
                   </folding>
@@ -34,8 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Task/src/rationals/Rational.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+                <state relative-caret-position="720">
+                  <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -75,7 +75,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544182442961" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544182887837" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -93,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRationals.a Rational with two negative numbers normalizes to two positive numbers">
+  <component name="RunManager" selected="JUnit.TestRationals.a Rational with negative denominator normalizes to rational with negative numerator and positive denominator">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -122,6 +122,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="rationals.TestRationals" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRationals.a Rational with negative denominator normalizes to rational with negative numerator and positive denominator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KotlinRationals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rationals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="rationals.TestRationals" />
+      <option name="METHOD_NAME" value="a Rational with negative denominator normalizes to rational with negative numerator and positive denominator" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,29 +190,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRationals.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KotlinRationals" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rationals.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="rationals.TestRationals" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRationals.a Rational with negative denominator normalizes to rational with negative numerator and positive denominator" />
         <item itemvalue="JUnit.TestRationals.a Rational with two negative numbers normalizes to two positive numbers" />
         <item itemvalue="JUnit.TestRationals" />
         <item itemvalue="JUnit.TestRationals.test2" />
         <item itemvalue="JUnit.TestRationals.denominator cannot be 0" />
-        <item itemvalue="JUnit.TestRationals.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -214,15 +214,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRationals - 2018.12.05 at 17h 39m 43s.xml">
-      <configuration name="TestRationals" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRationals_denominator_cannot_be_0 - 2018.12.05 at 17h 41m 58s.xml">
-      <configuration name="TestRationals.denominator cannot be 0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRationals_denominator_cannot_be_0 - 2018.12.05 at 17h 42m 57s.xml">
-      <configuration name="TestRationals.denominator cannot be 0" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestRationals - 2018.12.07 at 11h 19m 16s.xml">
       <configuration name="TestRationals" configurationId="JUnit" />
     </history-entry>
@@ -243,6 +234,15 @@
     </history-entry>
     <history-entry file="TestRationals_a_Rational_with_two_negative_numbers_normalizes_to_two_positive_numbers - 2018.12.07 at 11h 32m 32s.xml">
       <configuration name="TestRationals.a Rational with two negative numbers normalizes to two positive numbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRationals_a_Rational_with_two_negative_numbers_normalizes_to_two_positive_numbers - 2018.12.07 at 11h 34m 06s.xml">
+      <configuration name="TestRationals.a Rational with two negative numbers normalizes to two positive numbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRationals_a_Rational_with_negative_denominator_normalizes_to_rational_with_negative_numerator_and_positive_denominator - 2018.12.07 at 11h 38m 40s.xml">
+      <configuration name="TestRationals.a Rational with negative denominator normalizes to rational with negative numerator and positive denominator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRationals_a_Rational_with_negative_denominator_normalizes_to_rational_with_negative_numerator_and_positive_denominator - 2018.12.07 at 11h 41m 07s.xml">
+      <configuration name="TestRationals.a Rational with negative denominator normalizes to rational with negative numerator and positive denominator" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -336,20 +336,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/src/rationals/Rational.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task/test/TestRationals.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="145" column="53" lean-forward="true" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
+        <state relative-caret-position="733">
+          <caret line="150" column="52" lean-forward="true" selection-start-line="150" selection-start-column="52" selection-end-line="150" selection-end-column="52" />
           <folding>
             <element signature="e#19#174#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/src/rationals/Rational.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
         </state>
       </provider>
     </entry>

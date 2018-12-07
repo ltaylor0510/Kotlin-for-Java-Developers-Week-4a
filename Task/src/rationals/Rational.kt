@@ -64,6 +64,8 @@ fun Rational.normalize(): Rational {
         this
     else if (numerator < 0.toBigInteger() && denominator < 0.toBigInteger()) {
         Rational(numerator.abs() / divisor, denominator.abs() / divisor)
+    } else if (numerator > 0.toBigInteger() && denominator < 0.toBigInteger()) {
+        Rational(numerator.abs() / divisor, denominator.abs() / divisor).unaryMinus()
     } else
         Rational(numerator / divisor, denominator / divisor)
 }
